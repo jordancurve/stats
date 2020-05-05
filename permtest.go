@@ -208,7 +208,7 @@ func randComb(n, m int, emit func([]int)) {
 	S := map[int]bool{}
 	c := make([]int, m)
 	for j := n - m; j < n; j++ {
-		t := rand.Intn(j)
+		t := rand.Intn(j + 1)
 		var x int
 		if !S[t] {
 			x = t
